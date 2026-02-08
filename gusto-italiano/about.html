@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Gusto Italiano</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        /* Page hero with restaurant interior */
+        .page-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header Section -->
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Gusto Italiano Home">
+                    <h1>Gusto Italiano</h1>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Main Navigation -->
+                <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link active" aria-current="page">About</a></li>
+                        <li><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#reservation" class="btn btn-primary">Reserve Table</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Banner for About Page -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Story</h1>
+                <p>Family traditions since 1985</p>
+            </div>
+        </section>
+
+        <!-- About Content -->
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>Welcome to Gusto Italiano</h2>
+                        <p>Founded in 1985 by the Moretti family, Gusto Italiano began as a small trattoria in Naples, Italy. Giovanni Moretti brought his family's century-old recipes to America, determined to share authentic Italian flavors with a new audience.</p>
+                        <p>Today, we continue that tradition under the leadership of Giovanni's daughter, Maria. Every dish is prepared with the same care and attention to detail that has been passed down through generations.</p>
+                        <blockquote>
+                            "Food is not just nourishment, it's a celebration of life, family, and tradition."
+                            <cite>– Giovanni Moretti, Founder</cite>
+                        </blockquote>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gusto Italiano restaurant bar area with wine selection" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Team</h2>
+                <div class="team-grid">
+                    <article class="team-member">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Head Chef Marco Rossi preparing pasta in the kitchen" loading="lazy">
+                        <h3>Marco Rossi</h3>
+                        <p class="position">Head Chef</p>
+                        <p>Trained in Florence with 15 years of experience in traditional Italian cuisine.</p>
+                    </article>
+                    
+                    <article class="team-member">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sous Chef Sophia Conti arranging a gourmet dish" loading="lazy">
+                        <h3>Sophia Conti</h3>
+                        <p class="position">Sous Chef</p>
+                        <p>Specializes in seafood and pasta, brings modern techniques to classic recipes.</p>
+                    </article>
+                    
+                    <article class="team-member">
+                        <img src="https://images.unsplash.com/photo-1541614101331-41a2f75298d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sommelier Antonio Bianchi selecting wine from cellar" loading="lazy">
+                        <h3>Antonio Bianchi</h3>
+                        <p class="position">Sommelier</p>
+                        <p>Our wine expert with deep knowledge of Italian vineyards and wine pairing.</p>
+                    </article>
+                    
+                    <article class="team-member">
+                        <img src="https://images.unsplash.com/photo-1567168544635-6e6d5c4e6a70?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Founder Giovanni Moretti smiling in the kitchen" loading="lazy">
+                        <h3>Giovanni Moretti</h3>
+                        <p class="position">Founder</p>
+                        <p>Started Gusto Italiano with a vision to bring authentic Italian cuisine to America.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurant Gallery -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Our Restaurant</h2>
+                <p class="section-subtitle">Experience the warm, inviting atmosphere of Gusto Italiano</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gusto Italiano restaurant exterior with traditional Italian architecture" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Traditional Exterior</h3>
+                            <p>Located in the heart of Little Italy</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cozy dining area with rustic decor and candlelight" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Cozy Dining Area</h3>
+                            <p>Perfect for romantic dinners and family gatherings</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional kitchen where our chefs prepare authentic dishes" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Professional Kitchen</h3>
+                            <p>Where magic happens every day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation" id="reservation">
+            <div class="container">
+                <h2 class="section-title">Visit Us Today</h2>
+                <p class="text-center mb-lg">Experience authentic Italian dining at its finest</p>
+                <div class="text-center">
+                    <a href="contact.html#contact-form" class="btn btn-primary">Make a Reservation</a>
+                    <a href="menu.html" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Gusto Italiano</h3>
+                    <p>Bringing authentic Italian flavors to your table since 1985. Family recipes, fresh ingredients, and warm hospitality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Pasta Street, Little Italy, NYC</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@gustoitaliano.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="hours">
+                        <li><span>Monday - Thursday</span> <span>11:00 AM - 10:00 PM</span></li>
+                        <li><span>Friday - Saturday</span> <span>11:00 AM - 11:00 PM</span></li>
+                        <li><span>Sunday</span> <span>12:00 PM - 9:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Gusto Italiano. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

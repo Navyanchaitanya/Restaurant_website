@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gusto Italiano Menu - Authentic Italian dishes, pasta, pizza, desserts and fine wines">
+    <title>Menu | Gusto Italiano - Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        /* Menu hero background */
+        .page-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: var(--spacing-xl) 0;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header Section -->
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Gusto Italiano Home">
+                    <h1>Gusto Italiano</h1>
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Main Navigation -->
+                <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="menu.html" class="nav-link active" aria-current="page">Menu</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li><a href="#reservation" class="btn btn-primary">Reserve Table</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Menu Hero Banner -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Menu</h1>
+                <p>Authentic Italian flavors crafted with passion</p>
+            </div>
+        </section>
+
+        <!-- Menu Filter -->
+        <section class="menu-filter" role="region" aria-label="Menu Categories">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Menu</button>
+                    <button class="filter-btn" data-filter="appetizers">Appetizers</button>
+                    <button class="filter-btn" data-filter="pasta">Pasta</button>
+                    <button class="filter-btn" data-filter="pizza">Pizza</button>
+                    <button class="filter-btn" data-filter="main">Main Courses</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="drinks">Drinks</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appetizers Section -->
+        <section class="menu-category" id="appetizers" role="region" aria-label="Appetizers">
+            <div class="container">
+                <h2 class="section-title">Antipasti (Appetizers)</h2>
+                <p class="menu-category-description">Start your meal with our authentic Italian appetizers, perfect for sharing.</p>
+                
+                <div class="menu-items-grid">
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh bruschetta with tomatoes and basil on toasted bread" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Bruschetta Classica</h3>
+                            <p class="menu-item-description">Toasted bread topped with fresh tomatoes, garlic, basil, and extra virgin olive oil</p>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Caprese salad with mozzarella, tomatoes, and basil" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Caprese Salad</h3>
+                            <p class="menu-item-description">Fresh mozzarella, vine-ripened tomatoes, basil leaves, and balsamic reduction</p>
+                            <span class="menu-item-price">$12.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crispy fried calamari with lemon wedges" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Calamari Fritti</h3>
+                            <p class="menu-item-description">Crispy fried calamari served with lemon wedges and marinara sauce</p>
+                            <span class="menu-item-price">$14.99</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pasta Section -->
+        <section class="menu-category" id="pasta" role="region" aria-label="Pasta Dishes">
+            <div class="container">
+                <h2 class="section-title">Pasta</h2>
+                <p class="menu-category-description">Fresh, homemade pasta prepared daily with traditional sauces.</p>
+                
+                <div class="menu-items-grid">
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Spaghetti Carbonara with pancetta and black pepper" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p class="menu-item-description">Classic Roman pasta with eggs, pecorino cheese, guanciale, and black pepper</p>
+                            <span class="menu-item-tag">Chef's Special</span>
+                            <span class="menu-item-price">$18.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Layered lasagna with meat sauce and cheese" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Lasagna Bolognese</h3>
+                            <p class="menu-item-description">Layers of pasta, slow-cooked beef ragù, béchamel sauce, and mozzarella</p>
+                            <span class="menu-item-price">$19.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fettuccine Alfredo with creamy sauce" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Fettuccine Alfredo</h3>
+                            <p class="menu-item-description">Fresh fettuccine pasta with creamy parmesan sauce and black pepper</p>
+                            <span class="menu-item-price">$16.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Homemade ravioli with cheese filling" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Ravioli di Ricotta</h3>
+                            <p class="menu-item-description">Homemade ricotta cheese ravioli with sage butter sauce</p>
+                            <span class="menu-item-price">$17.99</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizza Section -->
+        <section class="menu-category" id="pizza" role="region" aria-label="Wood-Fired Pizza">
+            <div class="container">
+                <h2 class="section-title">Pizza</h2>
+                <p class="menu-category-description">Traditional Neapolitan pizza cooked in our wood-fired oven.</p>
+                
+                <div class="menu-items-grid">
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic Margherita pizza with fresh basil" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Margherita</h3>
+                            <p class="menu-item-description">Classic pizza with San Marzano tomatoes, fresh mozzarella, basil, and olive oil</p>
+                            <span class="menu-item-price">$16.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Four cheese pizza with melted cheeses" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Quattro Formaggi</h3>
+                            <p class="menu-item-description">Four cheese pizza with mozzarella, gorgonzola, parmesan, and fontina</p>
+                            <span class="menu-item-price">$18.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Spicy Diavola pizza with salami" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Diavola</h3>
+                            <p class="menu-item-description">Spicy pizza with tomato, mozzarella, spicy salami, and chili peppers</p>
+                            <span class="menu-item-tag">Spicy</span>
+                            <span class="menu-item-price">$19.99</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Courses Section -->
+        <section class="menu-category" id="main" role="region" aria-label="Main Courses">
+            <div class="container">
+                <h2 class="section-title">Secondi (Main Courses)</h2>
+                <p class="menu-category-description">Traditional Italian main courses served with seasonal vegetables.</p>
+                
+                <div class="menu-items-grid">
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Osso Buco with tender veal shanks" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Osso Buco alla Milanese</h3>
+                            <p class="menu-item-description">Braised veal shanks with vegetables, white wine, and broth, served with risotto</p>
+                            <span class="menu-item-tag">Signature Dish</span>
+                            <span class="menu-item-price">$32.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Whole baked sea bass with herbs" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Branzino al Forno</h3>
+                            <p class="menu-item-description">Whole Mediterranean sea bass baked with herbs, lemon, and olive oil</p>
+                            <span class="menu-item-price">$29.99</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desserts Section -->
+        <section class="menu-category" id="desserts" role="region" aria-label="Desserts">
+            <div class="container">
+                <h2 class="section-title">Dolci (Desserts)</h2>
+                <p class="menu-category-description">Sweet endings to your Italian dining experience.</p>
+                
+                <div class="menu-items-grid">
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Classic Italian tiramisu dessert" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Tiramisu</h3>
+                            <p class="menu-item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                            <span class="menu-item-price">$8.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Silky vanilla panna cotta with berry sauce" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Panna Cotta</h3>
+                            <p class="menu-item-description">Silky vanilla cream dessert served with mixed berry compote</p>
+                            <span class="menu-item-price">$7.99</span>
+                        </div>
+                    </article>
+                    
+                    <article class="menu-item-card" role="article">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crispy cannoli with ricotta filling" loading="lazy">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Cannoli Siciliani</h3>
+                            <p class="menu-item-description">Crispy pastry tubes filled with sweet ricotta cheese and chocolate chips</p>
+                            <span class="menu-item-price">$9.99</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Special Events</h2>
+                <p class="section-subtitle">Join us for memorable dining experiences</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Special wine tasting event at Gusto Italiano" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Wine Tasting Nights</h3>
+                            <p>Every Thursday evening</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cooking class with our head chef" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Cooking Classes</h3>
+                            <p>Learn from Chef Marco every Saturday</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Special event dinner setup" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Private Events</h3>
+                            <p>Perfect for celebrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation Section -->
+        <section class="reservation" id="reservation" role="region" aria-label="Make a Reservation">
+            <div class="container">
+                <h2 class="section-title">Ready to Dine With Us?</h2>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required aria-required="true">
+                            <div class="error-message" id="dateError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required aria-required="true">
+                                <option value="">Select Time</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                            <div class="error-message" id="timeError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required aria-required="true">
+                                <option value="">Select</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6">6+ People</option>
+                            </select>
+                            <div class="error-message" id="guestsError"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests</label>
+                        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Reserve Table</button>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        Thank you! Your reservation has been submitted. We'll contact you shortly to confirm.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Gusto Italiano</h3>
+                    <p>Bringing authentic Italian flavors to your table since 1985. Family recipes, fresh ingredients, and warm hospitality.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Pasta Street, Little Italy, NYC</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@gustoitaliano.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="hours">
+                        <li><span>Monday - Thursday</span> <span>11:00 AM - 10:00 PM</span></li>
+                        <li><span>Friday - Saturday</span> <span>11:00 AM - 11:00 PM</span></li>
+                        <li><span>Sunday</span> <span>12:00 PM - 9:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Gusto Italiano. All rights reserved.</p>
+                <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Menu filtering functionality
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const menuCategories = document.querySelectorAll('.menu-category');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Show/hide menu categories based on filter
+                    menuCategories.forEach(category => {
+                        if (filter === 'all' || category.id === filter) {
+                            category.style.display = 'block';
+                            
+                            // Smooth scroll to category
+                            if (filter !== 'all') {
+                                setTimeout(() => {
+                                    category.scrollIntoView({ 
+                                        behavior: 'smooth',
+                                        block: 'start'
+                                    });
+                                }, 300);
+                            }
+                        } else {
+                            category.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Set current year in footer
+            const currentYear = new Date().getFullYear();
+            const yearElement = document.getElementById('currentYear');
+            if (yearElement) {
+                yearElement.textContent = currentYear;
+            }
+            
+            // Set minimum date for reservation form
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+                
+                // Set default to tomorrow
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                dateInput.value = tomorrow.toISOString().split('T')[0];
+            }
+        });
+    </script>
+</body>
+</html>

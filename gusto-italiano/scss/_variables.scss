@@ -1,0 +1,39 @@
+// Color Palette
+$primary-color: #c41e3a; // Italian red
+$secondary-color: #f4a261; // Warm orange
+$accent-color: #2a9d8f; // Teal
+$dark-color: #264653; // Dark blue
+$light-color: #f8f9fa; // Off-white
+$text-dark: #333333;
+$text-light: #666666;
+$border-color: #e0e0e0;
+$shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+// Typography
+$font-heading: 'Playfair Display', serif;
+$font-body: 'Roboto', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+// Spacing
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 3rem;
+$spacing-xl: 4rem;
+
+// Border Radius
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-wide: 1200px;

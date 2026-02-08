@@ -1,0 +1,65 @@
+// Mobile Menu Toggle
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: $text-dark;
+  cursor: pointer;
+  padding: $spacing-xs;
+  
+  @media (max-width: $breakpoint-tablet) {
+    display: block;
+  }
+  
+  &:focus {
+    outline: 2px solid $accent-color;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// Responsive Typography
+@media (max-width: $breakpoint-tablet) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+// Responsive Spacing
+@media (max-width: $breakpoint-tablet) {
+  section {
+    padding: $spacing-lg 0;
+  }
+  
+  .hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+}
+
+// Print Styles
+@media print {
+  .site-header,
+  .site-footer,
+  .btn {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
